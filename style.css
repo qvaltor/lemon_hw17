@@ -1,0 +1,158 @@
+@import url('');
+/*css reset*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+
+
+.info {
+	width: 800px;
+	margin: 10px auto;
+	background-color: rgb(33, 209, 39);
+	text-align: center;
+	box-shadow:  5px 5px 5px #575454;
+	transition: all 0.3s linear;
+}
+/* .info:hover {
+	background-color: #fcffcc;
+    transform: scale(1.1);
+} */
+
+textarea {
+	overflow: auto;
+	resize: none;
+	width: 300px;
+	height: 50px;
+	border: 2px solid #f25525;
+	border-radius: 10px  0 10px 0;
+	padding: 8px 0 8px 10px;
+	margin: 10px;
+}
+
+textarea:hover {
+	box-shadow: 1px 0px 3px #000000;
+}
+
+div.info select {
+	margin: 10px;
+	appearance: none;
+	outline: none;
+	background-color: rgb(248, 145, 9);
+	background: url(compass1.png) no-repeat right;
+	text-align: left;
+	padding: 5px 35px 5px 0;
+}
+
+select:hover {
+	box-shadow: 1px 0px 2px #000000;
+	background-color: cornsilk;
+	border: #f2eb25 botter 2px
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+input:focus {
+    background: coral;
+    outline: none;
+}
+
+input:hover {
+	box-shadow: 1px 0px 3px #000000;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    width: 50px;
+    height: 15px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+	background-color: rgba(128, 128, 128, 0.597);
+    transition: all .5s linear;
+}
+
+input[type="checkbox"] + label::after {
+    content: "";
+	width: 0px;
+    height: 0px;
+    border: 9px solid grey;
+    border-radius: 100%;
+	position: absolute;
+	left: 0;
+	transition: all .5s linear;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+	display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 10px 0 10px 60px;
+    
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+   background-color: #f22574;
+   border: black solid 2px;
+   
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: "";
+	background-color: black;
+    border: 9px solid black;
+	left: 35px;
+}
